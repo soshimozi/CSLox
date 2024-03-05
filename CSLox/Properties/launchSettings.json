@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CSLox": {
+      "commandName": "Project",
+      "commandLineArgs": "const_test.lox"
+    }
+  }
+}

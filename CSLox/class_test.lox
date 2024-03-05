@@ -1,0 +1,36 @@
+﻿class Foo {
+  inFoo() {
+    print "in foo";
+    return "foo";
+  }
+}
+
+class Bar < Foo {
+  inBar() {
+    print "in bar";
+    return "bar";
+  }
+}
+
+class Baz < Bar {
+  inBaz() {
+    print "in baz";
+    return "baz";
+  }
+}
+
+const epsilon = 23.323;
+
+var baz = Baz();
+baz.inFoo(); // expect: in foo
+baz.inBar(); // expect: in bar
+baz.inBaz(); // expect: in baz
+
+var foo = baz.inFoo();
+var bar = baz.inBar();
+var bazz = baz.inBaz();
+
+var blahblah = baz.inFoo() + " " + baz.inBar();
+
+print blahblah;
+print foo + " " + bar + " " + bazz;

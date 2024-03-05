@@ -1,0 +1,21 @@
+﻿const epsilon = 6;
+// epsilon = 5;
+
+var a = 43;
+
+var b = a + epsilon;
+print b;
+
+var c = a + " string test";
+print c;
+
+print clock();
+print current_state;
+
+fun doSomething() {
+	return 123;
+}
+
+
+print doSomething;
+print doSomething();
